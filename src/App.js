@@ -1,22 +1,10 @@
-
+import React from 'react'
+import Header from './header'
 import './App.css';
 
 function App() {
   return (
-    <header className="header">
-      <h1 className="titulo">
-        ProgBr
-      </h1>
-      <ul className="menu">
-      <li>About</li>
-      <li>Buy</li>
-      <li>Contact</li>
-      </ul>
-
-
-
-     
-    </header>
+    <Header></Header>
   );
 }
 
