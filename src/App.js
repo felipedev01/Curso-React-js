@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <Header nome="Felipe" links={["Sobre","comprar","contato"]}></Header>
+    <Header nome="Felipe" links={["Sobre","comprar","contato","Login","Perfil"]}></Header>
   );
 }
 
