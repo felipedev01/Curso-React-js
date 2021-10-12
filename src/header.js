@@ -1,6 +1,7 @@
 
 import React from 'react'
 import './App.css'
+import Menu from './Menu'
 
 function Header (props){
 
@@ -9,12 +10,10 @@ function Header (props){
     <h1 className="titulo">
       {props.nome}
     </h1>
-    <ul className="menu">
-    <li>{props.links[0]}</li>
-    <li>{props.links[1]}</li>
-    <li>{props.links[2]}</li>
-    </ul>
+    
+   <Menu links={props.links}>
 
+   </Menu>
 
 
    
@@ -23,4 +22,7 @@ function Header (props){
 
   )
 
-}export default Header
+}
+
+
+export default Header
