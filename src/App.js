@@ -1,10 +1,11 @@
 import React from 'react'
-import Header from './header'
+
 import './App.css';
+import Counter from './header';
 
 function App() {
   return (
-    <Header nome="Felipe" links={["about","buy","contato"]}></Header>
+    <Counter count={1}></Counter>
   );
 }
 

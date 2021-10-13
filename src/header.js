@@ -1,23 +1,22 @@
 
 import React from 'react'
 import './App.css'
-import Menu from './Menu'
+import { useState } from 'react'
 
-function Header (props){
+function Counter (props){
+
+  const[count, setCount]=useState(props.count)
+  function add(){
+
+     setCount(count+1)
+  }
 
   return(
-    <header className="header">
-    <h1 className="titulo">
-      {props.nome}
-    </h1>
     
-   <Menu links={props.links}>
-
-   </Menu>
-
-
-   
-  </header>
+       
+       <div> <h1>Contador : {count}</h1>
+          <button onClick={add}>Add</button>
+       </div>
 
 
   )
@@ -25,4 +24,4 @@ function Header (props){
 }
 
 
-export default Header
+export default Counter
