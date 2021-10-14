@@ -13,11 +13,19 @@ function Counter (props){
 
     setCount(parseInt(localStorage.getItem("count")))
 
+    console.log("UseEffect  ativado")
+    
+    
   },[])
 
   useEffect(()=>{
 
   localStorage.setItem("count",count)
+  
+  return()=>{
+    console.log("Não tem mais contador")
+
+  }
 
 
   },[count])
